@@ -2,6 +2,7 @@ import type { PlasmoCSConfig, PlasmoGetStyle } from "plasmo"
 import React, { useState, useEffect, useRef, useCallback, useMemo } from "react"
 import { Readability } from "@mozilla/readability"
 import TurndownService from "turndown"
+import goblinLogo from "url:../assets/logo.svg"
 
 export const getStyle: PlasmoGetStyle = () => {
   const style = document.createElement("style")
@@ -371,7 +372,7 @@ export default function DocsAISidebar() {
           {/* Header */}
           <div style={styles.header}>
             <div style={styles.headerLeft}>
-              <div style={styles.logo}>G</div>
+              <img src={goblinLogo} alt="Goblin" style={{ width: "28px", height: "28px", borderRadius: "6px", objectFit: "cover", flexShrink: 0 }} />
               <span style={styles.headerTitle}>Goblin</span>
               <span style={styles.headerBadge}>Beta</span>
             </div>
