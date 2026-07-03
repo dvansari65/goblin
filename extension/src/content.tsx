@@ -371,8 +371,8 @@ export default function DocsAISidebar() {
           {/* Header */}
           <div style={styles.header}>
             <div style={styles.headerLeft}>
-              <div style={styles.logo}>AI</div>
-              <span style={styles.headerTitle}>Docs Copilot</span>
+              <div style={styles.logo}>G</div>
+              <span style={styles.headerTitle}>Goblin</span>
               <span style={styles.headerBadge}>Beta</span>
             </div>
             <button style={styles.closeBtn} onClick={() => setIsOpen(false)} title="Close sidebar">✕</button>
