@@ -1,0 +1,11 @@
+name = "goblin-backend"
+main = "src/index.ts"
+compatibility_date = "2024-05-29"
+
+# [vars]
+# UPSTASH_REDIS_REST_URL = "https://your-redis-url.upstash.io"
+# UPSTASH_REDIS_REST_TOKEN = "your-redis-token"
+# CLERK_PUBLISHABLE_KEY = "pk_test_..."
+# CLERK_SECRET_KEY = "sk_test_..."
+# GOOGLE_GENERATIVE_AI_API_KEY = "AIza..."
+# ANTHROPIC_API_KEY = "sk-ant-..."

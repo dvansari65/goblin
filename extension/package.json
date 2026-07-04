@@ -10,26 +10,45 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@clerk/chrome-extension": "^1.2.0",
     "@mozilla/readability": "^0.6.0",
     "plasmo": "0.90.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "8.0.7",
+    "react-syntax-highlighter": "^16.1.1",
+    "remark-gfm": "3.0.1",
     "turndown": "^7.2.4"
+  },
+  "alias": {
+    "#minpath": "./node_modules/vfile/lib/minpath.browser.js",
+    "#minproc": "./node_modules/vfile/lib/minproc.browser.js",
+    "#minurl": "./node_modules/vfile/lib/minurl.browser.js"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
-    "@types/chrome": "0.0.258",
+    "@types/chrome": "^0.0.258",
     "@types/mozilla-readability": "^0.2.1",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@types/turndown": "^5.0.6",
     "prettier": "3.2.4",
     "typescript": "5.3.3"
   },
   "manifest": {
+    "permissions": [
+      "activeTab",
+      "storage",
+      "sidePanel"
+    ],
     "host_permissions": [
+      "http://*/*",
       "https://*/*"
-    ]
+    ],
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    }
   }
 }

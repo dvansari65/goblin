@@ -1,0 +1,24 @@
+{
+  "name": "goblin-backend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "latest",
+    "@ai-sdk/google": "latest",
+    "@clerk/backend": "^1.2.0",
+    "@hono/clerk-auth": "^2.0.0",
+    "@upstash/redis": "^1.31.0",
+    "ai": "latest",
+    "hono": "^4.4.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^4.0.0"
+  }
+}

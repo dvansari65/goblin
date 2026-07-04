@@ -9,11 +9,13 @@
     "./**/*.tsx"
   ],
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
     "paths": {
       "~*": [
         "./*"
       ]
     },
+    "types": ["chrome"],
     "baseUrl": "."
   }
 }
